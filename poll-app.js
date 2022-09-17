@@ -17,7 +17,7 @@ console.log(poll);
 const registeredAnswer = (poll.registerNewAnswer = function () {
   const optionAnswer = Number(
     prompt(
-      `${this.question}\n${this.options[0]}\n${this.options[1]}\n${this.options[2]}\n${this.options[3]}\n(write option number)`
+      `${this.question}\n${this.options.join("\n")}\n(write option number)`
     )
   );
 
